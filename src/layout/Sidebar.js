@@ -42,7 +42,8 @@ const Sidebar = () => {
         </div>
         <div className="copyright w-full float-left">
           <p className="text-[15px] text-[#999] font-montserrat leading-[25px]">
-            © {new Date().getFullYear()} Tokyo
+            © {new Date().getFullYear()} Abidjan, Côte d'Ivoire. All Rights
+            Reserved.
             <br />
             Created by{" "}
             <a
@@ -50,7 +51,7 @@ const Sidebar = () => {
               href="https://themeforest.net/user/Codeefly"
               target="_blank"
             >
-              Codeefly
+              Lycoris Blue
             </a>
           </p>
         </div>
