@@ -12,13 +12,8 @@ const socialIcon = [
   },
   {
     id: 3,
-    iconName: "icon-behance-squared",
-    link: "https://www.behance.net/",
-  },
-  {
-    id: 4,
     iconName: "icon-linkedin-squared",
-    link: "https://www.linkedin.com/",
+    link: "www.linkedin.com/in/fulgence-medi-19b6b1279",
   },
 ];
 const Home = () => {
@@ -40,11 +35,10 @@ const Home = () => {
             </div>
             <div className="details ml-[80px]">
               <h3 className="name text-[55px] font-extrabold uppercase mb-[14px]">
-                Adriano <span>Smith</span>
+                Fulgence G <span>MEDI</span>
               </h3>
               <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">
-                I am a WordPress Developer at heart and create features that are
-                best suited for the job at hand.
+                Je suis un architecte logiciel dans l'âme, je conçois des solutions robustes orientées données et développe des applications full-stack et mobiles adaptées précisément aux besoins du projet.
               </p>
               <div className="social w-full float-left">
                 <ul className="m-0 list-none">

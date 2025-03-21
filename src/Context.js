@@ -30,12 +30,12 @@ const initialState = {
   newsModal: null,
   portfolioDetailsModal: null,
   menus: [
-    { id: 1, name: "Home", href: "home" },
-    { id: 2, name: "about", href: "about" },
-    { id: 3, name: "service", href: "service" },
-    { id: 4, name: "portfolio", href: "portfolio" },
-    { id: 5, name: "news", href: "news" },
-    { id: 6, name: "contact", href: "contact" },
+    { id: 1, name: "Accueil", href: "home" },
+    { id: 2, name: "À propos", href: "about" },
+    { id: 3, name: "Services", href: "service" },
+    { id: 4, name: "Portfolio", href: "portfolio" },
+    { id: 5, name: "Actualités", href: "news" },
+    { id: 6, name: "Contacts", href: "contact" },
   ],
 };
 
