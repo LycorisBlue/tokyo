@@ -56,8 +56,8 @@ const Service = () => {
         style={{
           display: 'block',
           width: '100%',
-          minHeight: '600px', // Hauteur minimale
-          height: getMainSectionHeight(), // Hauteur adaptative selon l'appareil
+          minHeight: getMainSectionHeight(),
+          height: 'auto',
           paddingTop: '100px',
           paddingBottom: '100px',
           clear: 'both',
