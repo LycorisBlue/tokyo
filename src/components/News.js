@@ -10,28 +10,11 @@ const news = [
     image: "assets/img/news/hackathon_agl.jpg",
     author: "Fulgence G. MEDI",
     date: "Mars 2024",
-    content: `
-      <p class="bigger text-[#888] text-[20px] mb-[31px]">
-        J'ai eu l'honneur de recevoir le Prix coup de cœur d'AGL lors du prestigieux Hackathon PangaeaX 2024, une reconnaissance qui a ouvert les portes du centre d'incubation Yiri du groupe AGL.
-      </p>
-      <p class="mb-[22px]">
-        Ce prix témoigne non seulement de la qualité technique de notre solution, mais aussi de son potentiel d'innovation et de sa pertinence pour le marché africain. La reconnaissance par un groupe aussi respecté qu'AGL est une validation importante de notre approche et de notre vision.
-      </p>
-      <div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
-        <div class="icon absolute left-0 top-[5px]">
-          <i class="icon-quote-left text-[40px] text-black" />
-        </div>
-        <p class="text-[20px]">
-          "L'innovation ne naît pas seulement d'une idée brillante, mais de la capacité à transformer cette idée en solution concrète qui répond à des besoins réels. C'est ce que nous avons cherché à faire lors de ce hackathon."
-        </p>
-      </div>
-      <p class="mb-[22px]">
-        Suite à cette distinction, mon équipe et moi avons développé un business case pour SITARAIL, démontrant ainsi notre capacité à traduire des concepts innovants en solutions commerciales viables. Cette expérience a considérablement renforcé ma compréhension des enjeux business liés au développement technologique.
-      </p>
-      <p>
-        Cette reconnaissance s'inscrit parfaitement dans ma vision d'utiliser la technologie comme levier de développement pour l'Afrique, en créant des solutions adaptées à nos contextes spécifiques et capables de résoudre des problématiques locales.
-      </p>
-    `,
+    introduction: "J'ai eu l'honneur de recevoir le Prix coup de cœur d'AGL lors du prestigieux Hackathon PangaeaX 2024, une reconnaissance qui a ouvert les portes du centre d'incubation Yiri du groupe AGL.",
+    mainContent: "Ce prix témoigne non seulement de la qualité technique de notre solution, mais aussi de son potentiel d'innovation et de sa pertinence pour le marché africain. La reconnaissance par un groupe aussi respecté qu'AGL est une validation importante de notre approche et de notre vision.",
+    quote: "L'innovation ne naît pas seulement d'une idée brillante, mais de la capacité à transformer cette idée en solution concrète qui répond à des besoins réels. C'est ce que nous avons cherché à faire lors de ce hackathon.",
+    details: "Suite à cette distinction, mon équipe et moi avons développé un business case pour SITARAIL, démontrant ainsi notre capacité à traduire des concepts innovants en solutions commerciales viables. Cette expérience a considérablement renforcé ma compréhension des enjeux business liés au développement technologique.",
+    conclusion: "Cette reconnaissance s'inscrit parfaitement dans ma vision d'utiliser la technologie comme levier de développement pour l'Afrique, en créant des solutions adaptées à nos contextes spécifiques et capables de résoudre des problématiques locales."
   },
   {
     id: 2,
@@ -39,28 +22,11 @@ const news = [
     image: "assets/img/news/smilepay_launch.jpg",
     author: "Fulgence G. MEDI",
     date: "Avril 2024",
-    content: `
-      <p class="bigger text-[#888] text-[20px] mb-[31px]">
-        Avril 2024 a marqué le lancement officiel de SMILE PAY, une plateforme innovante de services de transaction que j'ai développée pour Smart Technology à Abidjan.
-      </p>
-      <p class="mb-[22px]">
-        SMILE PAY représente une avancée significative dans le domaine des solutions financières digitales en Côte d'Ivoire. Cette plateforme permet aux entreprises de créer leur propre écosystème financier interne, facilitant ainsi les transactions entre l'entreprise et ses employés.
-      </p>
-      <div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
-        <div class="icon absolute left-0 top-[5px]">
-          <i class="icon-quote-left text-[40px] text-black" />
-        </div>
-        <p class="text-[20px]">
-          "Avec SMILE PAY, nous avons voulu démontrer que les solutions fintech peuvent être à la fois sophistiquées et parfaitement adaptées aux réalités africaines, répondant ainsi à des besoins spécifiques que les solutions internationales ne couvrent pas toujours."
-        </p>
-      </div>
-      <p class="mb-[22px]">
-        Le développement de SMILE PAY a impliqué la mise en œuvre de technologies avancées en matière de sécurité des transactions et d'expérience utilisateur, garantissant ainsi une solution robuste, fiable et agréable à utiliser pour tous les acteurs concernés.
-      </p>
-      <p>
-        Ce projet illustre parfaitement ma conviction que l'innovation technologique en Afrique doit s'ancrer dans une compréhension profonde des contextes locaux pour apporter une valeur réelle et durable.
-      </p>
-    `,
+    introduction: "Avril 2024 a marqué le lancement officiel de SMILE PAY, une plateforme innovante de services de transaction que j'ai développée pour Smart Technology à Abidjan.",
+    mainContent: "SMILE PAY représente une avancée significative dans le domaine des solutions financières digitales en Côte d'Ivoire. Cette plateforme permet aux entreprises de créer leur propre écosystème financier interne, facilitant ainsi les transactions entre l'entreprise et ses employés.",
+    quote: "Avec SMILE PAY, nous avons voulu démontrer que les solutions fintech peuvent être à la fois sophistiquées et parfaitement adaptées aux réalités africaines, répondant ainsi à des besoins spécifiques que les solutions internationales ne couvrent pas toujours.",
+    details: "Le développement de SMILE PAY a impliqué la mise en œuvre de technologies avancées en matière de sécurité des transactions et d'expérience utilisateur, garantissant ainsi une solution robuste, fiable et agréable à utiliser pour tous les acteurs concernés.",
+    conclusion: "Ce projet illustre parfaitement ma conviction que l'innovation technologique en Afrique doit s'ancrer dans une compréhension profonde des contextes locaux pour apporter une valeur réelle et durable."
   },
   {
     id: 3,
@@ -68,28 +34,11 @@ const news = [
     image: "assets/img/news/ansut_award.jpg",
     author: "Fulgence G. MEDI",
     date: "Février 2024",
-    content: `
-      <p class="bigger text-[#888] text-[20px] mb-[31px]">
-        J'ai eu l'honneur de recevoir le Prix de la COLLABORATION lors du Hackathon organisé par l'Agence Nationale du Service Universel des Télécommunications (ANSUT), une distinction qui met en lumière non seulement mes compétences techniques mais aussi mes aptitudes humaines.
-      </p>
-      <p class="mb-[22px]">
-        Cette reconnaissance souligne l'importance que j'accorde au travail d'équipe et à la communication dans le développement de solutions technologiques. La complexité des défis actuels exige une approche collaborative où différentes expertises se complètent pour créer des solutions vraiment pertinentes.
-      </p>
-      <div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
-        <div class="icon absolute left-0 top-[5px]">
-          <i class="icon-quote-left text-[40px] text-black" />
-        </div>
-        <p class="text-[20px]">
-          "La technologie est avant tout une aventure humaine. Les meilleures solutions naissent souvent de la rencontre entre différentes perspectives et expertises, harmonisées par une collaboration efficace et respectueuse."
-        </p>
-      </div>
-      <p class="mb-[22px]">
-        Ce prix reflète ma conviction profonde que l'innovation n'est pas seulement une question de code ou d'algorithmes, mais aussi de capacité à fédérer, à communiquer et à faire avancer collectivement des projets complexes.
-      </p>
-      <p>
-        Je suis particulièrement fier de cette reconnaissance car elle valide mon approche du développement technologique comme un processus profondément collaboratif et humain.
-      </p>
-    `,
+    introduction: "J'ai eu l'honneur de recevoir le Prix de la COLLABORATION lors du Hackathon organisé par l'Agence Nationale du Service Universel des Télécommunications (ANSUT), une distinction qui met en lumière non seulement mes compétences techniques mais aussi mes aptitudes humaines.",
+    mainContent: "Cette reconnaissance souligne l'importance que j'accorde au travail d'équipe et à la communication dans le développement de solutions technologiques. La complexité des défis actuels exige une approche collaborative où différentes expertises se complètent pour créer des solutions vraiment pertinentes.",
+    quote: "La technologie est avant tout une aventure humaine. Les meilleures solutions naissent souvent de la rencontre entre différentes perspectives et expertises, harmonisées par une collaboration efficace et respectueuse.",
+    details: "Ce prix reflète ma conviction profonde que l'innovation n'est pas seulement une question de code ou d'algorithmes, mais aussi de capacité à fédérer, à communiquer et à faire avancer collectivement des projets complexes.",
+    conclusion: "Je suis particulièrement fier de cette reconnaissance car elle valide mon approche du développement technologique comme un processus profondément collaboratif et humain."
   },
   {
     id: 4,
@@ -97,28 +46,11 @@ const news = [
     image: "assets/img/news/climate_innovation.jpg",
     author: "Fulgence G. MEDI",
     date: "Janvier 2024",
-    content: `
-      <p class="bigger text-[#888] text-[20px] mb-[31px]">
-        J'ai eu le privilège de remporter le 3ème Prix au Hackathon sur les "Innovations géospatiales pour la gestion durable de l'espace marin et côtier en Côte d'Ivoire", organisé en collaboration avec plusieurs institutions prestigieuses dont l'UFHB de Cocody et le CURAT.
-      </p>
-      <p class="mb-[22px]">
-        Ce concours m'a permis d'explorer l'application des technologies géospatiales à la résolution de problématiques environnementales critiques, notamment la gestion des zones côtières face aux défis du changement climatique.
-      </p>
-      <div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
-        <div class="icon absolute left-0 top-[5px]">
-          <i class="icon-quote-left text-[40px] text-black" />
-        </div>
-        <p class="text-[20px]">
-          "La technologie peut et doit être un outil majeur dans notre réponse collective aux défis environnementaux. Les innovations géospatiales offrent des possibilités immenses pour améliorer notre compréhension et notre gestion des écosystèmes fragiles."
-        </p>
-      </div>
-      <p class="mb-[22px]">
-        La solution que j'ai développée intègre des données satellites et des modèles prédictifs pour offrir une meilleure compréhension des dynamiques côtières et faciliter la prise de décision en matière de protection environnementale.
-      </p>
-      <p>
-        Cette reconnaissance confirme mon engagement à utiliser mes compétences technologiques au service de causes essentielles comme la protection de l'environnement et l'adaptation au changement climatique.
-      </p>
-    `,
+    introduction: "J'ai eu le privilège de remporter le 3ème Prix au Hackathon sur les \"Innovations géospatiales pour la gestion durable de l'espace marin et côtier en Côte d'Ivoire\", organisé en collaboration avec plusieurs institutions prestigieuses dont l'UFHB de Cocody et le CURAT.",
+    mainContent: "Ce concours m'a permis d'explorer l'application des technologies géospatiales à la résolution de problématiques environnementales critiques, notamment la gestion des zones côtières face aux défis du changement climatique.",
+    quote: "La technologie peut et doit être un outil majeur dans notre réponse collective aux défis environnementaux. Les innovations géospatiales offrent des possibilités immenses pour améliorer notre compréhension et notre gestion des écosystèmes fragiles.",
+    details: "La solution que j'ai développée intègre des données satellites et des modèles prédictifs pour offrir une meilleure compréhension des dynamiques côtières et faciliter la prise de décision en matière de protection environnementale.",
+    conclusion: "Cette reconnaissance confirme mon engagement à utiliser mes compétences technologiques au service de causes essentielles comme la protection de l'environnement et l'adaptation au changement climatique."
   },
 ];
 

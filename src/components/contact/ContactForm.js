@@ -59,9 +59,9 @@ const ContactForm = () => {
                   <span>
                     <a
                       className="text-[#767676] transition-all duration-300 hover:text-black"
-                      href="mailto:lycorisblue99@gmail.com"
+                      href="mailto:g.fulgence.medi@hotmail.com"
                     >
-                      lycorisblue99@gmail.com
+                      g.fulgence.medi@hotmail.com
                     </a>
                   </span>
                 </li>
@@ -72,9 +72,9 @@ const ContactForm = () => {
                   <span>
                     <a
                       className="text-[#767676] transition-all duration-300 hover:text-black"
-                      href="tel:+225 05 75 63 5710"
+                      href="tel:+225 07 59 67 0150 /+225 05 75 63 5710"
                     >
-                      +225 05 75 63 5710
+                      +225 07 59 67 0150 /+225 05 75 63 5710
                     </a>
                   </span>
                 </li>

@@ -63,6 +63,7 @@ const services = [
     image: "assets/img/news/2.jpg",
   },
 ];
+
 const ServiceItems = () => {
   const { setServiceModal, modalToggle, modal } = useContext(TokyoContext);
   return (
@@ -70,7 +71,7 @@ const ServiceItems = () => {
       <ul className="ml-[-40px] list-none flex flex-wrap">
         {services.map((service) => (
           <li className="mb-[40px] w-1/3 pl-[40px]" key={service.id}>
-            <div className="list_inner w-full h-auto clear-both float-left relative border-solid border-[rgba(0,0,0,.1)] border bg-white pt-[45px] pr-[30px] pb-[40px] pl-[30px] transition-all duration-300">
+            <div className="list_inner w-full h-auto clear-both float-left relative border-solid border-[rgba(0,0,0,.1)] border bg-white pt-[45px] pr-[30px] pb-[40px] pl-[30px] transition-all duration-300 rounded-[5px] shadow-sm hover:shadow-md">
               <span className="number inline-block mb-[25px] relative w-[60px] h-[60px] leading-[60px] text-center rounded-full bg-[rgba(0,0,0,.03)] font-bold text-black font-montserrat transition-all duration-300">
                 {service.id <= 9 ? `0${service.id}` : service.id}
               </span>
@@ -81,10 +82,12 @@ const ServiceItems = () => {
               <div className="tokyo_tm_read_more">
                 <a
                   href="#"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
                     modalToggle(true);
                     setServiceModal(service);
                   }}
+                  className="transition-all duration-300 hover:text-black"
                 >
                   <span>En savoir plus</span>
                 </a>
@@ -92,7 +95,8 @@ const ServiceItems = () => {
               <a
                 className="tokyo_tm_full_link"
                 href="#"
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   modalToggle(true);
                   setServiceModal(service);
                 }}

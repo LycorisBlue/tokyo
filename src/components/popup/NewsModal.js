@@ -32,7 +32,37 @@ const NewsModal = () => {
 
         {/* Contenu de l'article */}
         <div className="news_content w-full float-left">
-          <div className="descriptions w-full float-left" dangerouslySetInnerHTML={{ __html: newsModal.content }} />
+          <div className="descriptions w-full float-left">
+            {/* Introduction */}
+            <p className="bigger text-[#888] text-[20px] mb-[31px]">
+              {newsModal.introduction}
+            </p>
+
+            {/* Contenu principal */}
+            <p className="mb-[22px]">
+              {newsModal.mainContent}
+            </p>
+
+            {/* Citation */}
+            <div className="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
+              <div className="icon absolute left-0 top-[5px]">
+                <i className="icon-quote-left text-[40px] text-black" />
+              </div>
+              <p className="text-[20px]">
+                {newsModal.quote}
+              </p>
+            </div>
+
+            {/* Détails supplémentaires */}
+            <p className="mb-[22px]">
+              {newsModal.details}
+            </p>
+
+            {/* Conclusion */}
+            <p>
+              {newsModal.conclusion}
+            </p>
+          </div>
 
           {/* Section de partage */}
           <div className="news_share w-full float-left flex items-center mt-[40px] pt-[35px] border-solid border-[#DFDFDF] border-t">
@@ -54,22 +84,6 @@ const NewsModal = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Navigation entre articles */}
-          <div className="post_pagination w-full float-left flex justify-between mt-[40px]">
-            <div className="prev">
-              <a href="#" className="text-[16px] hover:text-black flex items-center" onClick={(e) => { e.preventDefault(); }}>
-                <i className="icon-left-open-big mr-[10px]"></i>
-                <span>Article précédent</span>
-              </a>
-            </div>
-            <div className="next">
-              <a href="#" className="text-[16px] hover:text-black flex items-center" onClick={(e) => { e.preventDefault(); }}>
-                <span>Article suivant</span>
-                <i className="icon-right-open-big ml-[10px]"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
