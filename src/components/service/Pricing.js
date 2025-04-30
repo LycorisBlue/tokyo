@@ -3,7 +3,7 @@ const Pricing = () => {
     <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
       <div className="container">
         <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-          <h3 className="text-[20px] font-bold">Pricing</h3>
+          <h3 className="text-[20px] font-bold">Forfaits</h3>
         </div>
         <div className="list w-full h-auto clear-both float-left">
           <ul className="ml-[-40px]">
@@ -12,32 +12,32 @@ const Pricing = () => {
                 <div className="price w-full float-left">
                   <h3 className="text-[40px] font-semibold">
                     <span>
-                      0<span className="currency">$</span>
+                      Starter<span className="currency"></span>
                     </span>
                   </h3>
                 </div>
                 <div className="plan w-full float-left">
                   <h3 className="font-semibold text-[20px] border-solid border-[rgba(0,0,0,.1)] border-b mb-[20px] pb-[20px]">
-                    Free
+                    Applications Simples
                   </h3>
                 </div>
                 <ul className="item list-none">
                   <li className="active">
-                    <p>Premium Icons</p>
+                    <p>Application mobile ou web simple</p>
                   </li>
-                  <li className="opacity-50">
-                    <p>Quality Logo</p>
+                  <li className="active">
+                    <p>Interface utilisateur épurée</p>
                   </li>
-                  <li className="opacity-50">
-                    <p>Stock Images</p>
+                  <li className="active">
+                    <p>Fonctionnalités basiques</p>
                   </li>
-                  <li className="opacity-50">
-                    <p>Free Support</p>
+                  <li className="active">
+                    <p>Support après livraison (1 mois)</p>
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
-                    <span>Purchase</span>
+                  <a href="mailto:lycorisblue99@gmail.com">
+                    <span>Demander un devis</span>
                   </a>
                 </div>
               </div>
@@ -47,36 +47,36 @@ const Pricing = () => {
                 <div className="price w-full float-left">
                   <h3 className="text-[40px] font-semibold">
                     <span>
-                      30<span className="currency">$</span>
+                      Standard<span className="currency"></span>
                     </span>
                   </h3>
                 </div>
                 <div className="plan w-full float-left">
                   <h3 className="font-semibold text-[20px] border-solid border-[rgba(0,0,0,.1)] border-b mb-[20px] pb-[20px]">
-                    Basic
+                    Applications Professionnelles
                   </h3>
                 </div>
                 <ul className="item list-none">
                   <li className="active">
-                    <p>Premium Icons</p>
+                    <p>Application complète multi-plateforme</p>
                   </li>
                   <li className="active">
-                    <p>Quality Logo</p>
+                    <p>Design personnalisé et responsive</p>
                   </li>
-                  <li className="opacity-50">
-                    <p>Stock Images</p>
+                  <li className="active">
+                    <p>Intégration backend et API</p>
                   </li>
-                  <li className="opacity-50">
-                    <p>Free Support</p>
+                  <li className="active">
+                    <p>Support et maintenance (3 mois)</p>
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
-                    <span>Purchase</span>
+                  <a href="mailto:lycorisblue99@gmail.com">
+                    <span>Demander un devis</span>
                   </a>
                 </div>
                 <span className="popular absolute inline-block bg-black text-white text-[13px] px-[20px] pb-[3px] pt-0 top-[-17px] right-[10px]">
-                  Popular
+                  Populaire
                 </span>
               </div>
             </li>
@@ -85,32 +85,32 @@ const Pricing = () => {
                 <div className="price w-full float-left">
                   <h3 className="text-[40px] font-semibold">
                     <span>
-                      70<span className="currency">$</span>
+                      Premium<span className="currency"></span>
                     </span>
                   </h3>
                 </div>
                 <div className="plan w-full float-left">
                   <h3 className="font-semibold text-[20px] border-solid border-[rgba(0,0,0,.1)] border-b mb-[20px] pb-[20px]">
-                    Premium
+                    Solutions Entreprise
                   </h3>
                 </div>
                 <ul className="item list-none">
                   <li className="active">
-                    <p>Premium Icons</p>
+                    <p>Système complet sur mesure</p>
                   </li>
                   <li className="active">
-                    <p>Quality Logo</p>
+                    <p>Architecture avancée et évolutive</p>
                   </li>
                   <li className="active">
-                    <p>Stock Images</p>
+                    <p>Intégration systèmes existants</p>
                   </li>
                   <li className="active">
-                    <p>Free Support</p>
+                    <p>Support continu et évolutions</p>
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
-                    <span>Purchase</span>
+                  <a href="mailto:lycorisblue99@gmail.com">
+                    <span>Demander un devis</span>
                   </a>
                 </div>
               </div>

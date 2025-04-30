@@ -10,13 +10,8 @@ const Sidebar = () => {
           {" "}
           {/* You can use image or text as logo. data-type values are: "image" and "text" */}
           <a href="#">
-            <img
-              className="max-w-[150px]"
-              src="assets/img/logo/dark.png"
-              alt="image"
-            />
             <h3 className="font-poppins font-black text-[31px] tracking-[5px]">
-              TOKYO
+              FULGENCE
             </h3>
           </a>
         </div>
@@ -24,9 +19,8 @@ const Sidebar = () => {
           <ul className="transition_link m-0 list-none">
             {menus.map((menu) => (
               <li
-                className={`m-0 w-full float-left ${
-                  menu.href == nav ? "active" : ""
-                }`}
+                className={`m-0 w-full float-left ${menu.href == nav ? "active" : ""
+                  }`}
                 key={menu.id}
               >
                 <a
@@ -42,16 +36,14 @@ const Sidebar = () => {
         </div>
         <div className="copyright w-full float-left">
           <p className="text-[15px] text-[#999] font-montserrat leading-[25px]">
-            © {new Date().getFullYear()} Abidjan, Côte d'Ivoire. All Rights
-            Reserved.
+            © {new Date().getFullYear()} Abidjan, Côte d'Ivoire. Tous droits réservés.
             <br />
-            Created by{" "}
             <a
               className="text-[#787878] font-medium transition-all duration-300 hover:text-black"
-              href="https://themeforest.net/user/Codeefly"
+              href="https://github.com/LycorisBlue"
               target="_blank"
             >
-              Lycoris Blue
+              Fulgence G. MEDI
             </a>
           </p>
         </div>

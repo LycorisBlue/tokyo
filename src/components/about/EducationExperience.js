@@ -1,41 +1,53 @@
 const experiencesData = [
   {
     id: 1,
-    date: "2018 - Now",
-    designation: "Exclusive Author",
-    company: "Envato Market",
+    date: "Actuel",
+    designation: "Architecte Logiciel",
+    company: "BYTEOPS",
   },
   {
     id: 2,
-    date: "2016 - 2018",
-    designation: "UX Designer",
-    company: "RGB Studio",
+    date: "2024",
+    designation: "Architecte Logiciel",
+    company: "Ascens Service (filiale du groupe AGL)",
   },
   {
     id: 3,
-    date: "2012 - 2016",
-    designation: "Web Designer",
-    company: "Innovations Park",
+    date: "Depuis juin 2024",
+    designation: "Développeur Fullstack",
+    company: "ANSUT - Agence Nationale du Service Universel des Télécommunications",
+  },
+  {
+    id: 4,
+    date: "Avril 2024 - Présent",
+    designation: "Développeur Mobile",
+    company: "Smart Technology",
+  },
+  {
+    id: 5,
+    date: "Déc 2023 - Janvier 2024",
+    designation: "Développeur Web/Mobile",
+    company: "ANSUT DIGITAL FANZONE",
   },
 ];
 const educationData = [
   {
     id: 1,
-    date: "2014 - 2016",
-    degree: "Master Degree",
-    institute: "Oxford Univercity",
+    date: "Depuis juillet 2023",
+    degree: "Développeur Web/Mobile & IOT",
+    institute: "SIMPLON.CO",
   },
   {
     id: 2,
-    date: "2010 - 2014",
-    degree: "Bachelor Degree",
-    institute: "Texas Univercity",
+    date: "2022 - 2023",
+    degree: "Licence en Informatique",
+    institute: "École Supérieure des Hautes Études Technologiques",
   },
   {
     id: 3,
-    date: "2008 - 2010",
-    degree: "Associate Degree",
-    institute: "Simone College",
+    date: "2024",
+    degree: "Certifications Techniques",
+    institute: "UDEMY, W3 SCHOOLS (JS, NODE, FLUTTER, REACT JS)",
   },
 ];
 
@@ -46,15 +58,14 @@ const EducationExperience = () => {
         <div className="in w-full h-auto clear-both float-left flex">
           <div className="left w-1/2 pr-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Education</h3>
+              <h3 className="text-[20px] font-bold">Formation</h3>
             </div>
             <div className="tokyo_tm_resume_list w-full h-auto clear-both float-left">
               <ul className="m-0 list-none relative inline-block pt-[10px]">
                 {educationData.map((edu, i) => (
                   <li
-                    className={`m-0 w-full float-left relative pl-[20px] ${
-                      i == educationData.length - 1 ? "" : "pb-[45px]"
-                    }`}
+                    className={`m-0 w-full float-left relative pl-[20px] ${i == educationData.length - 1 ? "" : "pb-[45px]"
+                      }`}
                     key={edu.id}
                   >
                     <div className="list_inner  w-full h-auto clear-both float-left relative flex">
@@ -77,15 +88,14 @@ const EducationExperience = () => {
           </div>
           <div className="right w-1/2 pl-[50px]">
             <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-              <h3 className="text-[20px] font-bold">Experience</h3>
+              <h3 className="text-[20px] font-bold">Expérience</h3>
             </div>
             <div className="tokyo_tm_resume_list w-full h-auto clear-both float-left">
               <ul className="m-0 list-none relative inline-block pt-[10px]">
                 {experiencesData.map((exp, i) => (
                   <li
-                    className={`m-0 w-full float-left relative pl-[20px] ${
-                      i == experiencesData.length - 1 ? "" : "pb-[45px]"
-                    }`}
+                    className={`m-0 w-full float-left relative pl-[20px] ${i == experiencesData.length - 1 ? "" : "pb-[45px]"
+                      }`}
                     key={exp.id}
                   >
                     <div className="list_inner  w-full h-auto clear-both float-left relative flex">

@@ -3,24 +3,24 @@ import { sliderProps } from "../../sliderProps";
 const testimonialData = [
   {
     id: 1,
-    text: "These people really know what they are doing! Great customer support availability and supperb kindness.",
+    text: "Fulgence a fait preuve d'une créativité et d'une capacité d'innovation remarquables lors du Hackathon PangaeaX. Son approche collaborative a été déterminante pour le succès du projet.",
     authorImage: "assets/img/testimonials/1.jpg",
-    authorName: "Alexander Walker",
-    authorDesignation: "Graphic Designer",
+    authorName: "Jury du Hackathon PangaeaX",
+    authorDesignation: "AGL Group",
   },
   {
     id: 2,
-    text: "These people really know what they are doing! Great customer support availability and supperb kindness.",
+    text: "Le travail de Fulgence sur l'application ANSUT DIGITAL FANZONE pendant la CAN 2023 a démontré sa capacité à livrer des solutions de qualité dans des délais serrés.",
     authorImage: "assets/img/testimonials/2.jpg",
-    authorName: "Isabelle Smith",
-    authorDesignation: "Content Manager",
+    authorName: "Équipe ANSUT",
+    authorDesignation: "Agence Nationale",
   },
   {
     id: 3,
-    text: "These people really know what they are doing! Great customer support availability and supperb kindness.",
+    text: "Sa maîtrise des technologies mobiles et son approche orientée solutions ont permis de développer une application qui répond parfaitement aux besoins de nos utilisateurs.",
     authorImage: "assets/img/testimonials/3.jpg",
-    authorName: "Baraka Clinton",
-    authorDesignation: "English Teacher",
+    authorName: "Smart Technology",
+    authorDesignation: "Partenaire de projet",
   },
 ];
 const Testimonials = () => {
@@ -28,7 +28,7 @@ const Testimonials = () => {
     <div className="tokyo_tm_testimonials w-full h-auto clear-both float-left py-[100px] px-0">
       <div className="container">
         <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-          <h3 className="text-[20px] font-bold">Testimonials</h3>
+          <h3 className="text-[20px] font-bold">Témoignages</h3>
         </div>
         <div className="list w-full h-auto clear-both float-left overflow-hidden">
           <Swiper

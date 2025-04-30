@@ -11,9 +11,9 @@ const DetailsModal = () => {
           <img src="assets/img/thumbs/4-2.jpg" alt="image" />
           <div
             className="main"
-            data-img-url={portfolioDetailsModal.thumbnail}
+            data-img-url={portfolioDetailsModal.thumbnail || portfolioDetailsModal.bigImage}
             style={{
-              backgroundImage: `url(${portfolioDetailsModal.thumbnail})`,
+              backgroundImage: `url(${portfolioDetailsModal.thumbnail || portfolioDetailsModal.bigImage})`,
             }}
           />
         </div>
@@ -45,7 +45,7 @@ const DetailsModal = () => {
               </li>
               <li className="mb-[8px] w-full float-left">
                 <span className="first font-bold block text-black mb-[3px]">
-                  Category
+                  Catégorie
                 </span>
                 <span>
                   <a
@@ -64,12 +64,12 @@ const DetailsModal = () => {
               </li>
               <li className="w-full float-left">
                 <span className="first font-bold block text-black mb-[3px]">
-                  Share
+                  Partager
                 </span>
                 <ul className="share list-none relative top-[7px]">
                   {portfolioDetailsModal.share.map((social) => (
                     <li className="mr-[10px] inline-block" key={social.id}>
-                      <a className="text-black text-[18px]" href={social.link}>
+                      <a className="text-black text-[18px]" href={social.link} target="_blank">
                         <i className={social.iconName} />
                       </a>
                     </li>

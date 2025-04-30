@@ -1,7 +1,7 @@
 const funFacts = [
-  { id: 1, value: "777+", name: "Projects Completed" },
-  { id: 2, value: "3K", name: "Happy Clients" },
-  { id: 3, value: "9K+", name: "Lines of Code" },
+  { id: 1, value: "10+", name: "Projets Réalisés" },
+  { id: 2, value: "3", name: "Prix d'Innovation" },
+  { id: 3, value: "20+", name: "Technologies Maîtrisées" },
 ];
 
 const FunFact = () => {
@@ -9,7 +9,7 @@ const FunFact = () => {
     <div className="tokyo_tm_facts w-full h-auto clear-both float-left px-0 pt-[100px] pb-[60px]">
       <div className="container">
         <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-          <h3 className="text-[20px] font-bold">Fun Facts</h3>
+          <h3 className="text-[20px] font-bold">À propos de moi</h3>
         </div>
         <div className="list w-full h-auto clear-both float-left">
           <ul className="ml-[-40px] list-none">

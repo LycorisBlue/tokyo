@@ -2,16 +2,11 @@ import SectionContainer from "./SectionContainer";
 const socialIcon = [
   {
     id: 1,
-    iconName: "icon-facebook-squared",
-    link: "https://www.facebook.com/",
+    iconName: "icon-github-squared",
+    link: "https://github.com/LycorisBlue",
   },
   {
     id: 2,
-    iconName: "icon-twitter-squared",
-    link: "https://twitter.com/",
-  },
-  {
-    id: 3,
     iconName: "icon-linkedin-squared",
     link: "www.linkedin.com/in/fulgence-medi-19b6b1279",
   },
@@ -38,18 +33,18 @@ const Home = () => {
                 Fulgence G <span>MEDI</span>
               </h3>
               <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">
-                Je suis un architecte logiciel dans l'âme, je conçois des solutions robustes orientées données et développe des applications full-stack et mobiles adaptées précisément aux besoins du projet.
+                Développeur Fullstack et Mobile passionné par l'innovation technologique. À seulement 20 ans, je crée des solutions numériques adaptées aux défis spécifiques de l'Afrique, alliant créativité et expertise technique pour transformer des idées en applications concrètes.
               </p>
               <div className="social w-full float-left">
                 <ul className="m-0 list-none">
                   {socialIcon.map((item) => (
                     <li className="mr-[8px] inline-block" key={item.id}>
                       <a
-                        className="text-black text-[20px] transition-all duration-300 hover:text-black"
-                        href={item.link}
-                        target="_blank"
+                      className="text-black text-[20px] transition-all duration-300 hover:text-black"
+                      href={item.link}
+                      target="_blank"
                       >
-                        <i className={item.iconName} />
+                      <i className={item.iconName} />
                       </a>
                     </li>
                   ))}

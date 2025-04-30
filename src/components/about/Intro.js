@@ -6,21 +6,15 @@ const Intro = () => {
         <img className="min-w-full" src="assets/img/slider/1.jpg" alt="image" />
       </div>
       <div className="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
-        <h3 className="text-[22px] font-bold">Adriano Smith</h3>
-        <span>Web Developer</span>
+        <h3 className="text-[22px] font-bold">Fulgence G. MEDI</h3>
+        <span>Développeur Fullstack/Mobile</span>
       </div>
       <div className="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
         <p className="mb-[11px]">
-          Hi, my name is Adriano Smith and I began using WordPress when it first
-          began. I’ve spent most of my waking hours for the last ten years
-          designing, programming and operating WordPress sites.
+          À seulement 20 ans, je me suis fixé un objectif ambitieux : devenir un modèle d'excellence et d'innovation pour la jeunesse ivoirienne. Passionné par le potentiel transformateur de la technologie, j'ai rapidement compris que le développement numérique représentait une opportunité unique pour l'Afrique.
         </p>
         <p>
-          One of my specialties is taking an idea from scratch and creating a
-          full-fledged platform. I go beyond to produce sites with a unique,
-          outstanding, contemporary look-and-feel. With extensive knowledge of
-          web mechanics, I’m able to optimize complex integrations to require
-          little-to-no maintenance while running on their own for years.
+          Ma vision va au-delà du code. Je veux montrer à chaque jeune Ivoirien qu'avec détermination et créativité, nous pouvons bâtir des solutions technologiques adaptées à nos défis locaux, créer de la valeur et contribuer activement au développement de notre pays. Chaque application que je développe est guidée par cette ambition.
         </p>
       </div>
       <div className="tokyo_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]">
@@ -29,21 +23,21 @@ const Intro = () => {
             <ul className="m-0 list-none">
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Birthday:
+                  Naissance:
                 </span>
-                <span>01.07.1990</span>
+                <span>18.03.2005</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Age:
+                  Âge:
                 </span>
-                <span>32</span>
+                <span>20</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Address:
+                  Adresse:
                 </span>
-                <span>Ave 11, New York, USA</span>
+                <span>Abidjan, Cocody, Côte d'Ivoire</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
@@ -52,22 +46,22 @@ const Intro = () => {
                 <span>
                   <a
                     className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="mailto:tokyo@gmail.com"
+                    href="mailto:lycorisblue99@gmail.com"
                   >
-                    tokyo@gmail.com
+                    lycorisblue99@gmail.com
                   </a>
                 </span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Phone:
+                  Téléphone:
                 </span>
                 <span>
                   <a
                     className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="tel:+77 022 177 05 05"
+                    href="tel:+225 05 75 63 5710"
                   >
-                    +77 022 177 05 05
+                    +225 05 75 63 5710
                   </a>
                 </span>
               </li>
@@ -79,41 +73,41 @@ const Intro = () => {
             <ul className="m-0 list-none">
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Nationality:
+                  Nationalité:
                 </span>
-                <span>USA</span>
+                <span>Ivoirienne</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Study:
+                  Formation:
                 </span>
-                <span>Univercity of Texas</span>
+                <span>École Supérieure des Hautes Études Technologiques</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Degree:
+                  Diplôme:
                 </span>
-                <span>Master</span>
+                <span>Licence en Informatique</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Interest:
+                  Intérêts:
                 </span>
-                <span>Playing Football</span>
+                <span>Musique, Sport, Recherche, Fiction</span>
               </li>
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
                   Freelance:
                 </span>
-                <span>Available</span>
+                <span>Disponible</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="tokyo_tm_button" data-position="left">
-        <a href="assets/img/cv/1.jpg" download>
-          <span>Download CV</span>
+        <a href="assets/img/cv/CV_2024-06-05_Medi_Gouandeuh Fulgence.pdf" download>
+          <span>Télécharger CV</span>
         </a>
       </div>
     </Fragment>

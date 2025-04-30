@@ -18,10 +18,10 @@ const ContactForm = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_id", // remplacer par votre service ID EmailJS
+          "template_id", // remplacer par votre template ID EmailJS
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "public_key" // remplacer par votre clé publique EmailJS
         )
         .then(
           (response) => {
@@ -43,6 +43,52 @@ const ContactForm = () => {
 
   return (
     <div className="fields w-full float-left clear-both h-auto">
+      <div className="tokyo_tm_contact_title">
+        <h3 className="text-[20px] font-bold mb-[25px]">Me contacter</h3>
+        <p className="mb-[25px]">
+          N'hésitez pas à me contacter pour discuter de vos projets ou pour toute question concernant mes services. Je vous répondrai dans les meilleurs délais.
+        </p>
+        <div className="tokyo_tm_short_info w-full h-auto clear-both float-left mb-[40px]">
+          <div className="left">
+            <div className="tokyo_tm_info">
+              <ul className="m-0 list-none">
+                <li className="m-0 mb-[10px]">
+                  <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
+                    Email:
+                  </span>
+                  <span>
+                    <a
+                      className="text-[#767676] transition-all duration-300 hover:text-black"
+                      href="mailto:lycorisblue99@gmail.com"
+                    >
+                      lycorisblue99@gmail.com
+                    </a>
+                  </span>
+                </li>
+                <li className="m-0 mb-[10px]">
+                  <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
+                    Téléphone:
+                  </span>
+                  <span>
+                    <a
+                      className="text-[#767676] transition-all duration-300 hover:text-black"
+                      href="tel:+225 05 75 63 5710"
+                    >
+                      +225 05 75 63 5710
+                    </a>
+                  </span>
+                </li>
+                <li className="m-0">
+                  <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
+                    Adresse:
+                  </span>
+                  <span>Abidjan, Cocody, Côte d'Ivoire</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <form
         className="contact_form"
         id="contact_form"
@@ -54,8 +100,8 @@ const ContactForm = () => {
         >
           <span>
             {error
-              ? "Please Fill Required Fields"
-              : "Your message has been received, We will contact you soon."}
+              ? "Veuillez remplir tous les champs requis"
+              : "Votre message a bien été envoyé. Je vous répondrai dès que possible."}
           </span>
         </div>
         <div className="first w-full float-left">
@@ -67,7 +113,7 @@ const ContactForm = () => {
                 value={name}
                 id="name"
                 type="text"
-                placeholder="Name"
+                placeholder="Nom"
               />
             </li>
             <li className="w-full mb-[30px] float-left">
@@ -92,9 +138,8 @@ const ContactForm = () => {
           />
         </div>
         <div className="tokyo_tm_button" data-position="left">
-          <button type="submit">Send Message</button>
+          <button type="submit">Envoyer</button>
         </div>
-        {/* If you want to change mail address to yours, please open modal.php and go to line 4 */}
       </form>
     </div>
   );
