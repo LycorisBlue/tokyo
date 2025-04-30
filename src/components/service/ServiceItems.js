@@ -1,5 +1,5 @@
 import { TokyoContext } from "@/src/Context";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const services = [
   {
@@ -65,21 +65,137 @@ const services = [
 ];
 
 const ServiceItems = () => {
-  const { setServiceModal, modalToggle, modal } = useContext(TokyoContext);
+  const { setServiceModal, modalToggle } = useContext(TokyoContext);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1200
+  );
+
+  // Fonction pour définir la largeur des éléments selon la taille de l'écran
+  const getItemWidth = () => {
+    if (windowWidth < 768) {
+      return '100%'; // Mobile: 1 colonne
+    } else if (windowWidth < 1024) {
+      return '50%';  // Tablette: 2 colonnes
+    } else {
+      return '33.333%'; // Desktop: 3 colonnes
+    }
+  };
+
+  // Mettre à jour la largeur de la fenêtre lors du redimensionnement
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
   return (
-    <div className="list w-full h-auto clear-both float-left">
-      <ul className="ml-[-40px] list-none flex flex-wrap">
+    <div className="list" style={{
+      width: '100%',
+      minHeight: '500px', // Hauteur minimale pour le conteneur principal
+      height: 'auto',
+      display: 'block',
+      position: 'relative',
+      overflow: 'visible' // Assurez-vous que le contenu ne soit pas coupé
+    }}>
+      <ul className="service-items-list" style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        margin: 0,
+        padding: 0,
+        listStyle: 'none',
+        marginLeft: '-40px',
+        minHeight: '450px', // Hauteur minimale pour la liste
+        height: 'auto',
+        position: 'relative',
+        overflow: 'visible' // Assurez-vous que le contenu ne soit pas coupé
+      }}>
         {services.map((service) => (
-          <li className="mb-[40px] w-1/3 pl-[40px]" key={service.id}>
-            <div className="list_inner w-full h-auto clear-both float-left relative border-solid border-[rgba(0,0,0,.1)] border bg-white pt-[45px] pr-[30px] pb-[40px] pl-[30px] transition-all duration-300 rounded-[5px] shadow-sm hover:shadow-md">
-              <span className="number inline-block mb-[25px] relative w-[60px] h-[60px] leading-[60px] text-center rounded-full bg-[rgba(0,0,0,.03)] font-bold text-black font-montserrat transition-all duration-300">
+          <li
+            className="service-item mb-[40px] pl-[40px]"
+            key={service.id}
+            style={{
+              width: getItemWidth(),
+              minHeight: '300px', // Hauteur minimale pour chaque élément
+              height: 'auto',
+              marginBottom: '40px',
+              paddingLeft: '40px',
+              boxSizing: 'border-box',
+              display: 'block',
+              position: 'relative',
+              overflow: 'visible' // Assurez-vous que le contenu ne soit pas coupé
+            }}
+          >
+            <div
+              className="service-item-inner"
+              style={{
+                position: 'relative',
+                display: 'block',
+                width: '100%',
+                minHeight: '250px', // Hauteur minimale pour chaque carte
+                height: 'auto',
+                backgroundColor: 'white',
+                padding: '45px 30px 40px 30px',
+                border: '1px solid rgba(0,0,0,.1)',
+                borderRadius: '5px',
+                boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+                transition: 'all 0.3s ease',
+                overflow: 'visible' // Assurez-vous que le contenu ne soit pas coupé
+              }}
+            >
+              <span
+                className="number"
+                style={{
+                  display: 'inline-block',
+                  marginBottom: '25px',
+                  width: '60px',
+                  height: '60px',
+                  lineHeight: '60px',
+                  textAlign: 'center',
+                  borderRadius: '9999px',
+                  backgroundColor: 'rgba(0,0,0,.03)',
+                  fontWeight: 'bold',
+                  color: 'black'
+                }}
+              >
                 {service.id <= 9 ? `0${service.id}` : service.id}
               </span>
-              <h3 className="title font-bold text-black text-[18px] mb-[15px]">
+              <h3
+                className="title"
+                style={{
+                  fontWeight: 'bold',
+                  color: 'black',
+                  fontSize: '18px',
+                  marginBottom: '15px',
+                  minHeight: '27px', // Hauteur minimale pour le titre
+                  height: 'auto'
+                }}
+              >
                 {service.name}
               </h3>
-              <p className="text">{service.text[0].slice(0, 70)}...</p>
-              <div className="tokyo_tm_read_more">
+              <p
+                className="description"
+                style={{
+                  marginBottom: '15px',
+                  minHeight: '60px', // Hauteur minimale pour la description
+                  height: 'auto'
+                }}
+              >
+                {service.text[0].slice(0, 70)}...
+              </p>
+              <div
+                className="read-more-link"
+                style={{
+                  minHeight: '24px', // Hauteur minimale pour le lien
+                  height: 'auto'
+                }}
+              >
                 <a
                   href="#"
                   onClick={(e) => {
@@ -87,25 +203,43 @@ const ServiceItems = () => {
                     modalToggle(true);
                     setServiceModal(service);
                   }}
-                  className="transition-all duration-300 hover:text-black"
+                  style={{
+                    display: 'inline-block',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                  }}
                 >
                   <span>En savoir plus</span>
                 </a>
               </div>
               <a
-                className="tokyo_tm_full_link"
+                className="full-link"
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
                   modalToggle(true);
                   setServiceModal(service);
                 }}
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  zIndex: 5
+                }}
               />
-              {/* Service Popup Start */}
+              {/* Image cachée pour le popup */}
               <img
-                className="popup_service_image opacity-0 invisible hidden absolute z-[-111]"
+                className="popup-image"
                 src={service.image}
                 alt="image"
+                style={{
+                  opacity: 0,
+                  visibility: 'hidden',
+                  position: 'absolute',
+                  zIndex: -111
+                }}
               />
             </div>
           </li>
@@ -114,4 +248,5 @@ const ServiceItems = () => {
     </div>
   );
 };
+
 export default ServiceItems;
